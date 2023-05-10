@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Solid&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Londrina Outline', cursive;
+}
+
+.app {
+  background-image: url('./assets/clouds.jpg');
+  background-color: #f8f8f8;
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
+
+}
+
+.app.warm {
+  background-image: url('./assets/hotsun.jpg');
+  transition: 0.4s ease-out;
+}
+
+header {
+  margin: 0;
+  padding: .5rem 1.5rem;
+  height: 100%;
+  width: 100%;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+h1, h2 {
+  
+  line-height: 100%;
+  text-transform: uppercase;  
+  font-weight: 900;
+  letter-spacing: +2px;
+  white-space: nowrap;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+main {
+  min-height: 100vh;
+  
+}
+
+.app .search-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.app .search-box .search-bar {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  color: #141212;
+}
+
+::placeholder {
+  color: black;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  font-family: 'Londrina Solid', cursive;
+  position: relative;
+  display: inline-block;
+  margin: 10px auto;
+  border-color: none;
+
+  padding: 15px 25px;
+
+  color: #A4DDED;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  font-size: 102px;
+  font-weight: 900;
+}
+
+.weather-box .weather {
+  color: #A4DDED;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 51px;
+  font-weight: 900;
+  
+} 
+
+.app .bottom {
+  font-family: 'Londrina Solid', cursive;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 1rem auto;
+  padding: 1rem;
+  color: #A4DDED;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
